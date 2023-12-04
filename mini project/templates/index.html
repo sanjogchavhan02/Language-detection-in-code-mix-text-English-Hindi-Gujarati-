@@ -1,0 +1,19 @@
+<html >
+  <head>
+    <title>Predict Code mixing language</title>  
+  </head>
+
+  <body>
+    <div>
+      <h1>Predict Code mixing language </h1>
+      <form action="{{ url_for('getprediction')}}" method="POST">
+        <label for="Text">Text:</label>
+        <input type="text" id="Text" name="Text" placeholder="Text">
+        <button type="submit">Submit</button>
+      </form>
+      <br>
+      <br>
+      {{ output }}
+    </div>
+  </body>
+</html>
